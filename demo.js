@@ -35,6 +35,7 @@ define(function (require, exports, module) {
         target: './controllers/main',
         effect: [0, 0]
     }], module);
+    
 
     /**
      * 初始化应用程序
