@@ -36,7 +36,6 @@ define(function (require, exports, module) {
         effect: [0, 0]
     }], module);
     
-
     /**
      * 初始化应用程序
      */
