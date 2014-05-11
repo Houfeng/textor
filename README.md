@@ -1,4 +1,3 @@
 Textor
 ======
-
-最好用的文本编辑器...
+This is a very cool text editor, not a IDE, Only 3s to start using.

@@ -1,11 +1,60 @@
-body{background:#fff;font-size:13px;font-family:"Helvetica Neue",Helvetica,sans-serif;margin:2em}
-h1{font-size:36px;}
-article h1{color:#333;font-size:20px;font-weight:normal;margin:0}
-article ul{color:#555;font-size:12px;font-weight:normal;line-height:17px;margin:1em 0}
-article h2{font-size:12px;font-weight:normal;line-height:14px;color:#bbb;margin:0}
-code{color:#0a0}
-table{width:100%; border:solid 1px #bbb;border-collapse:collapse; }
-table td, table th {border:solid 1px #bbb;text-align:left;padding:5px;}
-.info {margin:0px;padding:0px 0px 8px 0px;}
-.highlight {color:red; }
-.list li {padding:3px;}
+body {
+    background: #fff;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 2em
+}
+h1 {
+    font-size: 36px;
+}
+h2{
+    padding:0px;
+    margin:28px 0px 5px 0px;
+}
+a {
+    color: blue;
+}
+article h1 {
+    color: #333;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0
+}
+article ul {
+    color: #555;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 17px;
+    margin: 1em 0
+}
+article h2 {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    color: #bbb;
+    margin: 0
+}
+code {
+    color: #0a0
+}
+table {
+    width: 100%;
+    border: solid 1px #bbb;
+    border-collapse: collapse;
+}
+table td,
+table th {
+    border: solid 1px #bbb;
+    text-align: left;
+    padding: 5px;
+}
+.info {
+    margin: 0px;
+    padding: 0px 0px 8px 0px;
+}
+.highlight {
+    color: red;
+}
+.list li {
+    padding: 3px;
+}
