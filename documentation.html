@@ -9,12 +9,12 @@
 
 <body>
     <h1>Documentation</h1>
-    <h2>简单说明</h2>
+    <h2><a name='summary'></a>简单说明</h2>
     <p>
         欢迎查阅 Textor 在线文档，每次安装 Textor 新版本后，第一次运行会自动打开在线文档。
         <br/>也可以使用命令 <span class='highlight'>sys:help</span> 或快捷键 <span class='highlight'>ctrl+shift+h</span> 或 <span class='highlight'>command+shift+h</span> 打开在线文档.
     </p>
-    <h2>常用连接</h2>
+    <h2><a name='link'></a>常用连接</h2>
     <p>
         <ul class='list'>
             <li><a href='index.html'>Textor HomePage (Textor 主页)</a>
@@ -27,7 +27,7 @@
             </li>
         </ul>
     </p>
-    <h2>用户配置</h2>
+    <h2><a name='config'></a>用户配置</h2>
     <p>
         <ol class='list'>
             <li>单击侧栏或使用快捷键 ‘ctrl+2 或 command+2’ 切换到 ‘命令栏’</li>
@@ -36,7 +36,7 @@
             <li>使用 ‘sys:restart’ 重启后配置生效</li>
         </ol>
     </p>
-    <h2>安装和卸载扩展</h2>
+    <h2><a name='extension'></a>安装和卸载扩展</h2>
     <p>
         <ol>
             <li>单击侧栏或使用快捷键 ‘ctrl+2 或 command+2’ 切换到 ‘命令栏’</li>
@@ -45,9 +45,191 @@
             <li>使用 ‘extension:uninstall’ 命令卸载一个扩展</li>
         </ol>
     </p>
-    <h2>常用快捷键</h2>
+    <h2><a name='command'></a>常用命令</h2>
+    cmd 对应 Mac 的 Command 键，对应 Windows 的 Ctrl 键。
     <p>
-        其它内容，稍后补充...
+        <table style='width:550px;'>
+            <thead>
+                <tr>
+                    <td style='width:120px;'>命令</td>
+                    <td style='width:120px;'>快捷键</td>
+                    <td>说明</td>
+                </tr>
+            </thead>
+
+            <body>
+                <tr>
+                    <td>file:pick folder</td>
+                    <td>cmd+o</td>
+                    <td>打开一个目录</td>
+                </tr>
+                <tr>
+                    <td>file:pick folder</td>
+                    <td>cmd+shift+o</td>
+                    <td>打开一个文件</td>
+                </tr>
+                <tr>
+                    <td>file:new</td>
+                    <td>cmd+n</td>
+                    <td>新建一个空白文件</td>
+                </tr>
+                <tr>
+                    <td>file:close</td>
+                    <td>cmd+shift+c</td>
+                    <td>关闭当前文件</td>
+                </tr>
+                <tr>
+                    <td>file:save</td>
+                    <td>cmd+s</td>
+                    <td>保存当前文件</td>
+                </tr>
+                <tr>
+                    <td>file:save all</td>
+                    <td>cmd+shift+s</td>
+                    <td>保存所有文件</td>
+                </tr>
+                <tr>
+                    <td>file:save as</td>
+                    <td>cmd+shift+a</td>
+                    <td>另存当前文件</td>
+                </tr>
+                <tr>
+                    <td>font:plus</td>
+                    <td>cmd++</td>
+                    <td>放大当前字体大小</td>
+                </tr>
+                <tr>
+                    <td>font:minus</td>
+                    <td>cmd+-</td>
+                    <td>缩小当前字体大小</td>
+                </tr>
+                <tr>
+                    <td>font:reset</td>
+                    <td>cmd+0</td>
+                    <td>重置当前字体大小</td>
+                </tr>
+                <tr>
+                    <td>edit:cut</td>
+                    <td>cmd+x</td>
+                    <td>剪切选中的内容</td>
+                </tr>
+                <tr>
+                    <td>edit:copy</td>
+                    <td>cmd+c</td>
+                    <td>复制选中的内容</td>
+                </tr>
+                <tr>
+                    <td>edit:paste</td>
+                    <td>cmd+v</td>
+                    <td>粘贴选中的内容</td>
+                </tr>
+                <tr>
+                    <td>edit:select all</td>
+                    <td>cmd+a</td>
+                    <td>全选所有内容</td>
+                </tr>
+                <tr>
+                    <td>sidebar:{name}</td>
+                    <td>cmd+{1~9}</td>
+                    <td>打开指定序号的侧面板</td>
+                </tr>
+                <tr>
+                    <td>sidebar:close all</td>
+                    <td>cmd+`</td>
+                    <td>关闭所有侧面板</td>
+                </tr>
+                <tr>
+                    <td>footer:{name}</td>
+                    <td>cmd+shift+{1~9}</td>
+                    <td>打开指定序号的底面板</td>
+                </tr>
+                <tr>
+                    <td>footer:close all</td>
+                    <td>cmd+shift+`</td>
+                    <td>关闭所有底面板</td>
+                </tr>
+                <tr>
+                    <td>panel:close all</td>
+                    <td>esc</td>
+                    <td>关闭所有面板，包括侧面板、底面板。</td>
+                </tr>
+                <tr>
+                    <td>sys:config</td>
+                    <td></td>
+                    <td>打开 Textor 配置</td>
+                </tr>
+                <tr>
+                    <td>sys:data path</td>
+                    <td></td>
+                    <td>打开 Textor 数据目录</td>
+                </tr>
+                <tr>
+                    <td>sys:help</td>
+                    <td>cmd+shifr+h</td>
+                    <td>打开 Textor 在线帮助</td>
+                </tr>
+                <tr>
+                    <td>sys:site</td>
+                    <td></td>
+                    <td>打开 Textor 在线主页</td>
+                </tr>
+                <tr>
+                    <td>sys:update</td>
+                    <td></td>
+                    <td>检查更新</td>
+                </tr>
+                <tr>
+                    <td>sys:exit</td>
+                    <td></td>
+                    <td>退出 Textor</td>
+                </tr>
+                <tr>
+                    <td>sys:restart</td>
+                    <td></td>
+                    <td>重启 Textor</td>
+                </tr>
+                <tr>
+                    <td>view:fullscreen</td>
+                    <td>f11</td>
+                    <td>切换全屏</td>
+                </tr>
+                <tr>
+                    <td>extension:install</td>
+                    <td></td>
+                    <td>安装一个扩展插件</td>
+                </tr>
+                <tr>
+                    <td>extension:uninstall</td>
+                    <td></td>
+                    <td>卸载一个扩展插件</td>
+                </tr>
+                <tr>
+                    <td>extension:repertory</td>
+                    <td></td>
+                    <td>打开在线扩展库</td>
+                </tr>
+                <tr>
+                    <td>extension:local path</td>
+                    <td></td>
+                    <td>本地插件目录</td>
+                </tr>
+                <tr>
+                    <td>extension:dev on</td>
+                    <td></td>
+                    <td>打开插件开发状态，并加载要调试的插件</td>
+                </tr>
+                <tr>
+                    <td>extension:dev off</td>
+                    <td></td>
+                    <td>关闭插件开发状态，清除要调试的插件</td>
+                </tr>
+                <tr>
+                    <td>extension:package</td>
+                    <td></td>
+                    <td>将当前开发调式用的插件打包</td>
+                </tr>
+            </body>
+        </table>
     </p>
     <div style='display:none;'>
         <script type="text/javascript">
