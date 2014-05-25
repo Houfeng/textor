@@ -67,6 +67,15 @@
             var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
             document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd08096752a2ab652ea388a7368535793' type='text/javascript'%3E%3C/script%3E"));
         </script>
+        <script>
+            var args = location.href.split('?')[1];
+            if (args && args.toLowerCase() == 'download') {
+                setTimeout(function() {
+                    var isMac = navigator.userAgent.toLowerCase().indexOf('mac') > -1;
+                    document.getElementById('download-' + (isMac ? 'mac' : 'win')).click();
+                }, 600);
+            }
+        </script>
     </div>
 </body>
 
