@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Textor | Extension API</title>
     <link rel="stylesheet" href="stylesheets/page.css">
 </head>
+
 <body>
     <h1>Extension API</h1>
     <h2>Events</h2>
@@ -13,12 +15,40 @@
             <tr>
                 <th style='width:240px;'>Name</th>
                 <th>Summary</th>
-            </tr>   
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td>OnReady</td>
+                <td>onInit</td>
+                <td>在 Textor 初始化时</td>
+            </tr>
+            <tr>
+                <td>onReady</td>
                 <td>在 Textor 启动就续时</td>
+            </tr>
+            <tr>
+                <td>onRender</td>
+                <td>在 Textor 完成主界面呈现时</td>
+            </tr>
+            <tr>
+                <td>onCreateContextMenu</td>
+                <td>在创建内容菜单时，参数 contextMenu，1）工作区contextMenu.finder；2）编辑区contextMenu.editor</td>
+            </tr>
+            <tr>
+                <td>onChooseDir</td>
+                <td>在选取一个目录时，参数 path:String 目录路径</td>
+            </tr>
+            <tr>
+                <td>onChooseFile</td>
+                <td>在选取一个文件时，参数 path:String 文件路径</td>
+            </tr>
+            <tr>
+                <td>onOpenFile</td>
+                <td>在打开一个文件时，参数 file:{} 文件对象</td>
+            </tr>
+            <tr>
+                <td>onCloseFile</td>
+                <td>在关闭一个文件时，参数 file:{} 文件对象</td>
             </tr>
         </tbody>
     </table>
@@ -28,17 +58,131 @@
             <tr>
                 <th style='width:240px;'>Name</th>
                 <th>Summary</th>
-            </tr>   
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Context.view</td>
-                <td>UI 的根引用</td>
+                <td>context.view</td>
+                <td>视图的根引用</td>
+            </tr>
+            <tr>
+                <td>context.controller</td>
+                <td>控制器的根引用</td>
+            </tr>
+            <tr>
+                <td>context.platform</td>
+                <td>录前系统平台：darwin、linux、windows</td>
+            </tr>
+            <tr>
+                <td>context.isWin</td>
+                <td>是否是Windows</td>
+            </tr>
+            <tr>
+                <td>context.cmdKey</td>
+                <td>在 Mac 上值为 command，其它平台为 ctrl</td>
+            </tr>
+            <tr>
+                <td>context.app</td>
+                <td>应用程序全局对象</td>
+            </tr>
+            <tr>
+                <td>context.shell</td>
+                <td>本地系统接口</td>
+            </tr>
+            <tr>
+                <td>context.process</td>
+                <td>进行接口，可以启动并调用其它进程</td>
+            </tr>
+            <tr>
+                <td>context.fs</td>
+                <td>文件系统</td>
+            </tr>
+            <tr>
+                <td>context.pathSpliter</td>
+                <td>路径分隔符</td>
+            </tr>
+            <tr>
+                <td>context.command</td>
+                <td>命令管理器</td>
+            </tr>
+             <tr>
+                <td>context.console</td>
+                <td>控制台，提供 log、info、wran、error 四个方法</td>
+            </tr>
+            <tr>
+                <td>context.dataPath</td>
+                <td>数据及配置存储路径</td>
+            </tr>
+            <tr>
+                <td>context.extensionPath</td>
+                <td>扩展插件安装路径</td>
+            </tr>
+            <tr>
+                <td>context.lang</td>
+                <td>当前语言对象</td>
+            </tr>
+             <tr>
+                <td>context.network</td>
+                <td>网络服务，可用来检网络状态</td>
+            </tr>
+             <tr>
+                <td>context.config</td>
+                <td>当前用户配置</td>
+            </tr>
+            <tr>
+                <td>context.isFirstStart</td>
+                <td>是否是第一次启动</td>
+            </tr>
+            <tr>
+                <td>context.findExtension</td>
+                <td>查找一个扩展插件的引用</td>
+            </tr>
+            <tr>
+                <td>context.trigger</td>
+                <td>触发一个事件</td>
+            </tr>
+            <!-- context.env = _process.env; context.resovleUri = self.resovleUri; context.extensions = self; context.file = fileManager;-->
+        </tbody>
+    </table>
+    <h2>FileInfo</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style='width:240px;'>Name</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>fileInfo.path</td>
+                <td>文件的路径</td>
+            </tr>
+            <tr>
+                <td>fileInfo.type</td>
+                <td>文件的类型</td>
+            </tr>
+            <tr>
+                <td>fileInfo.isRoot</td>
+                <td>是否是根目录/td>
             </tr>
         </tbody>
     </table>
-    <br/>
-    其它内容，稍后补充...
+    <h2>Editor</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style='width:240px;'>Name</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>innerEditor</td>
+                <td>编辑对象</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>其它内容，稍后补充...
     <div style='display:none;'>
         <script type="text/javascript">
             var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
@@ -46,4 +190,5 @@
         </script>
     </div>
 </body>
+
 </html>
